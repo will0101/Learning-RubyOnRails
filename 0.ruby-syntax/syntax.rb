@@ -6,8 +6,6 @@ p reversed_address
 puts "Hello World!"
 
 
-
-
 def say_hello(thing_to_say)
   puts thing_to_say
 end
@@ -82,4 +80,18 @@ else
  puts "Bye"
 end
 
+a = [1,2,3,4,5]
+b = (1..5).to_a
+p b.reverse
 
+p b.length
+
+
+food_quantity = {"pizza" => 10, "cake" => 6 }
+p food_quantity
+p food_quantity["pizza"]
+
+
+food_quantity.each do |key, value|
+  puts "We have #{value} #{key}s in stock"
+end
