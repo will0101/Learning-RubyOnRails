@@ -1,5 +1,6 @@
-
+require_relative "crud"
 class Student
+  include Crud
   attr_accessor :first_name, :last_name, :email, :username, :password 
 
 
@@ -14,10 +15,10 @@ class Student
   def to_s 
   "First name: #{@first_name}"
   end 
-
 end 
 
-# william = Student.new("william","bogans","will0101","me@williambogans.dev","test12345")
-# p william
-# p william.first_name
+
+william = Student.new("a","b","c","d","password")
+hash = william.create_hash(william.password)
+p hash
 

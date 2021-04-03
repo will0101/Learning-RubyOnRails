@@ -6,8 +6,8 @@ module Crud
     BCrypt::Password.create(password)
   end
 
-  def verify_hashed_password(password)
-    BCrypt::Password.new(password) == password
+  def verify_hashed_password(password,hash)
+    BCrypt::Password.new(hash) == password
   end
   
 end
