@@ -1,3 +1,4 @@
+
 class Student
   attr_accessor :first_name, :last_name, :email, :username, :password 
 
@@ -16,6 +17,7 @@ class Student
 
 end 
 
-william = Student.new("william","bogans","will0101","me@williambogans.dev","test12345")
-p william
-p william.first_name
+# william = Student.new("william","bogans","will0101","me@williambogans.dev","test12345")
+# p william
+# p william.first_name
+
