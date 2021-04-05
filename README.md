@@ -10,6 +10,6 @@ This holds all the work I did for this Ruby on Rails course I did. Nothing much 
 ## End Result - Not done yet.
 1. https://wb-hello-world-blog.herokuapp.com/ 
 ### Lessons
-- How to create a Rails application.
-- How to CRUD a resource. 
-- Learned how 
+- Created a functioning Rails application.
+- How to CRUD a resource (articles). 
+- Deployed a Rails app.
