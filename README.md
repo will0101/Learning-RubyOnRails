@@ -8,3 +8,8 @@ This holds all the work I did for this Ruby on Rails course I did. Nothing much 
 2. https://github.com/rubocop/ruby-style-guide
 
 ## End Result - Not done yet.
+1. https://wb-hello-world-blog.herokuapp.com/ 
+### Lessons
+- Created a functioning Rails application.
+- How to CRUD a resource (articles). 
+- Deployed a Rails app to Heroku.
