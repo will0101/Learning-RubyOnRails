@@ -12,4 +12,4 @@ This holds all the work I did for this Ruby on Rails course I did. Nothing much 
 ### Lessons
 - Created a functioning Rails application.
 - How to CRUD a resource (articles). 
-- Deployed a Rails app.
+- Deployed a Rails app to Heroku.
