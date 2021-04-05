@@ -13,5 +13,5 @@ This holds all the work I did for this Ruby on Rails course I did. Nothing much 
 - Created a functioning Rails application.
 - How to CRUD a resource (articles). 
 - Deployed a Rails app to Heroku.
-- Conditional rendering.
+- Conditional rendering with embedded Ruby.
 - Creating partials. 
