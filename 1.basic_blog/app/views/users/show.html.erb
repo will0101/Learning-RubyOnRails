@@ -1,0 +1,8 @@
+
+<h1><%= @user.username %>'s profile</h1>
+<p>Number of articles <%= @user.articles.length%></p>
+
+<% if current_user == @user %>
+<%= link_to "Edit your profile", edit_user_path(@user)%>
+<%= link_to "Delete profile", method: :delete, data: {confirm: "Are you sure"}%> 
+<% end %>

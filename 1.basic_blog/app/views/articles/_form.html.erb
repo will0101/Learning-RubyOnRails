@@ -1,0 +1,17 @@
+
+<%= render "shared/errors", obj: @article%>
+
+<%= form_with(model: @article, local:true) do |f|%>
+
+<div>
+<%= f.label :title%>
+<%= f.text_field :title%>
+</div>
+<br>
+
+<div>
+<%= f.label :description%>
+<%= f.text_area :description%>
+</div>
+<%= f.submit %>
+<%end%>
