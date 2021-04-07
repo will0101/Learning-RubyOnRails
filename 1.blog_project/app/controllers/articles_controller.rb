@@ -7,7 +7,11 @@ class ArticlesController < ApplicationController
   end
 
   def index 
+    if current_user.nil? == true
+      redirect_to login_path
+    else 
     @articles = Article.all()
+    end 
   end 
 
   def create
