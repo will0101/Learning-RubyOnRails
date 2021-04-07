@@ -9,9 +9,16 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 1. https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/
 2. https://github.com/rubocop/ruby-style-guide
 
+## How to run locally
+
+1. You need to have [rails](https://rubyonrails.org/) installed on your system.
+2. Once the project is installed locally run `rails server`
+
 ## End Result - Not done yet.
 
 1. https://wb-hello-world-blog.herokuapp.com/
+
+![The blog application home page](./images/blog.png)
 
 ### Lessons
 
