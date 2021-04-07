@@ -15,3 +15,4 @@ This holds all the work I did for this Ruby on Rails course I did. Nothing much 
 - Deployed a Rails app to Heroku.
 - Conditional rendering with embedded Ruby.
 - Creating partials. 
+- Authentication, (without the devise gem). (This includes user permissions on the view and controller level)
