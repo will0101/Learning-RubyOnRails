@@ -20,7 +20,7 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 
 ![The blog application home page](./images/blog.png)
 
-### Lessons
+### Subjects learnt
 
 - Created a functioning Rails application.
 - How to CRUD a resource (articles).
