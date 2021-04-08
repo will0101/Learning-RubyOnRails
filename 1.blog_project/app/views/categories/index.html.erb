@@ -1,0 +1,10 @@
+<h1>All categories</h1>
+<% if @categories.length > 0 %> 
+<ul>
+<% @categories.each do |category|%>
+<li>
+<%= link_to category.name, category_path(category)%>
+</li>
+<%end%>
+<%end%>
+<%= link_to "Create a new category", new_category_path%>

@@ -1,0 +1,16 @@
+<h1>Create a new category</h1>
+
+
+
+<%= render "shared/errors", obj: @category%>
+
+<%= form_with(model: @category, local:true) do |f|%>
+
+<div>
+<%= f.label :name, "Category name"%>
+<%= f.text_field :name%>
+</div>
+<br>
+
+<%= f.submit "Create new category" %>
+<%end%>
