@@ -29,3 +29,4 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 - Creating partials.
 - Authentication, (without the devise gem). (This includes user permissions on the view and controller level)
 - Please note, there is no exception handling in the applation meaning. For example, trying to log in with the wrong information will render a pre-built Rail's HTML page
+- Unit/Integration testing. (Testing controllers and models)
