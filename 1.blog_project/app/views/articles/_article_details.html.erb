@@ -1,12 +1,10 @@
 <h1><strong>Title: <%= obj.title %> </strong></h1>
 <p>Associated Categories</p>
 <ul>
-<% obj.categories.each do |category| %>
-<li>
-<%= category.name%>
-</li> 
-</ul>
-<% end %>
+
+<% if obj.categories.any? %>
+<%= render obj.categories%>
+<%end%>
 <p>
 
 by: <%= link_to obj.user.username  ,user_path(obj.user) %> 

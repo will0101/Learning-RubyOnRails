@@ -5,6 +5,8 @@
 <li>
 <%= link_to category.name, category_path(category)%>
 </li>
+<p><%= pluralize(category.articles.count,"article")%></p>
+
 <%end%>
 <%end%>
 <%= link_to "Create a new category", new_category_path%>

@@ -6,8 +6,14 @@
 <li>
 <p>This article is by <%= article.user.username%></p>
 <p>The title of this article is <%= article.title %>. Here is the description <%= article.description %></p>
-<%= link_to "Show", article_path(article)%>
+
 <%= render "article_options", obj: article%>
+<%= link_to "Show", article_path(article)%>
+<p>Tags</p>
+
+<% if article.categories.any? %>
+<%= render article.categories%>
+<%end%>
 </li>
 
 </ul>
