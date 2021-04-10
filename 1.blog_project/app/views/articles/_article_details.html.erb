@@ -1,5 +1,14 @@
 <h1><strong>Title: <%= obj.title %> </strong></h1>
+<p>Associated Categories</p>
+<ul>
+<% obj.categories.each do |category| %>
+<li>
+<%= category.name%>
+</li> 
+</ul>
+<% end %>
 <p>
+
 by: <%= link_to obj.user.username  ,user_path(obj.user) %> 
 </p>
 <p><strong>Description: <%= obj.description %></strong></p>
