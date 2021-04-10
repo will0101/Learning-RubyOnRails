@@ -16,7 +16,7 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 
 ## End Result - Not done yet.
 
-1. https://wb-hello-world-blog.herokuapp.com/
+## [1. Blog Project](https://wb-hello-world-blog.herokuapp.com/)
 
 ![The blog application home page](./images/blog.png)
 
