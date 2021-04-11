@@ -1,0 +1,12 @@
+@import "semantic-ui";
+
+.chat {
+  height: 500px;
+}
+
+form.ui.reply.form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
