@@ -1,9 +1,10 @@
 <h1>Welcome to the login screen</h1>
 
-<%= form_with  do |form|%>
-<%= f.label, "Username:"%>
+<%= form_with(scope: :session, url: login_path) do |f| %>
+<%= f.label :username, "Username:"%>
 <%= f.text_field :username, placeholder: "Username" %>
-<%= f.label, "Password:"%>
+<%= f.label :password, "Password:"%>
 <%= f.text_field :password, placeholder: "Password" %>
+<%= f.submit "Login"%>
 <% end %>
 
