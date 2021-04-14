@@ -31,3 +31,13 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 - Please note, there is no exception handling in the applation meaning. For example, trying to log in with the wrong information will render a pre-built Rail's HTML page
 - Unit/Integration testing. (Testing controllers and models)
 - Creating one-to-one and many-to-many table relationships.
+
+## [2. Chat Application](https://wb-chat-app.herokuapp.com/)
+
+![The chat application](./images/chat.png)
+
+### Subjects learnt
+
+- Working with Semantic-UI with Rails
+- Adding a favicon
+- ActionCable(WebSocket) connections
