@@ -5,22 +5,24 @@ Speak your mind
 
 <div class="ui centered grid chat">
   <div class="ui card nine wide column">
+  <div class="ui feed" id="message-container">
   <%= render @messages %>
+  </div>
 
     <div class="extra content">
-  <form class="ui reply form">
+    <%= form_for(@message, html: {class: "ui reply form", role:"form"}, url:message_path, remote: true) do |f|%>
     <div class="field">
     <div class="ui fluid icon input">
-  <input type="text" placeholder="Search...">
-      <i class="bordered inverted orange edit icon"></i> 
-    </div>    
-
+    <%= f.text_field :body%>
+    <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe%>
     </div>
-    
-  </form>    
+    </div>
+    <%end%>    
   </div>
 </div>
   <div class="three wide column">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum reiciendis cumque expedita cum, nulla minima debitis aut architecto voluptate? Deleniti dignissimos aspernatur tenetur. Accusamus ipsa odio magnam asperiores!</p>  
     </div>
+        </div>
+
 </div>
