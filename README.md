@@ -38,6 +38,6 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 
 ### Subjects learnt
 
-- Working with Semantic-UI with Rails
+- Working with the Semantic-UI gem
 - Adding a favicon
 - ActionCable(WebSocket) connections
