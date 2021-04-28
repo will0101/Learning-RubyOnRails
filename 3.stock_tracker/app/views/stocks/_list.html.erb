@@ -2,4 +2,5 @@
 <% @tracked_stocks.each do |stock| %>
 <li> <%= stock.name%> </li>
 <li> <%= stock.last_price%> </li>
+<li><%= link_to("Remove", user_stock_path(stock), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-warning btn-xs")%></li>
 <% end %>

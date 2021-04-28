@@ -12,7 +12,6 @@ class StocksController < ApplicationController
           flash.now[:alert] = "Please enter a valid symbol to search"
           format.js {render partial: "users/result"}
         end 
-        redirect_to my_portfolio_path
       end
     else 
       flash.now[:alert] = "Please enter a symbol to search"
