@@ -5,7 +5,7 @@
 <div class="card card-header results-block">
 <p>Name: <%= friend.full_name %></p>
 <p>Email: <%= friend.email %></p>
-<p>Profile: <%= link_to("View Profile", "@", class:"btn btn-sm btn-success") %></p>
+<p>Profile: <%= link_to("View Profile", user_path(friend), class:"btn btn-sm btn-success") %></p>
 <% if current_user.not_friends_with?(friend.id)%>
 <%= link_to("Follow Friend", friendships_path(friend: friend), method: :post, class:"btn btn-sm btn-success") %></p>
 <%else%>

@@ -1,0 +1,19 @@
+<h1><%= @user.full_name  %></h1>
+
+
+<p>Email: <%= @user.email %></p>
+<% if current_user.not_friends_with?(@user.id)%>
+<%= link_to("Follow Friend", friendships_path(friend: @user), method: :post, class:"btn btn-sm btn-success") %></p>
+<%else%>
+<span class="badge badge-secondary">
+You are friends 
+</span>
+<%= link_to("Stop following", friendship_path(@user), class: "btn btn-sm btn-danger", method: :delete, data: {confirm: "Are you sure?"})%>
+<%end%>
+
+<%if !@tracked_stocks.empty?%>
+<%= render "stocks/list"%>
+<% else %>
+<p>This user isn't tracking any stocks</p>
+<%end%>
+</div>
