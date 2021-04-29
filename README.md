@@ -41,3 +41,18 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 - Working with the Semantic-UI gem
 - Adding a favicon
 - ActionCable(WebSocket) connections
+
+## [3. Social Media Stock Tracker](https://protected-headland-15811.herokuapp.com/)
+
+- Note, had trouble with the API in production used to get stock data in this one. It works on and off.
+
+![The Stock App](./images/stock.png)
+
+### Subjects learnt
+
+- The devise gem for authentication
+- How to store sensitive info in Rails
+- Using Ajax for form submission
+- Self referential association for friendship feature
+- Customizing the views for devise using Bootstrap
+- Rendering JS partials
