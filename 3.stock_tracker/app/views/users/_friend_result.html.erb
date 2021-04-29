@@ -1,0 +1,21 @@
+<%= render "layouts/messages"%>
+<div>
+<% if @friends%>
+<% @friends.each do |friend|%>
+<div class="card card-header results-block">
+<p>Name: <%= friend.full_name %></p>
+<p>Email: <%= friend.email %></p>
+<p>Profile: <%= link_to("View Profile", "@", class:"btn btn-sm btn-success") %></p>
+<% if current_user.not_friends_with?(friend.id)%>
+<%= link_to("Follow Friend", friendships_path(friend: friend), method: :post, class:"btn btn-sm btn-success") %></p>
+<%else%>
+<span class="badge badge-secondary">
+You are friends 
+</span>
+<%= link_to("Stop following", friendship_path(friend), class: "btn btn-sm btn-danger", method: :delete, data: {confirm: "Are you sure?"})%>
+<%end%>
+</div>
+
+<%end%>
+<%end%>
+</div>

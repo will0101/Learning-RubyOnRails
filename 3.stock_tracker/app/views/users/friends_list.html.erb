@@ -1,0 +1,26 @@
+<h1>Your friend's list</h1>
+<%= form_tag search_friends_path, remote: true, method: :get do %>
+<div id="results">
+
+</div>
+<div class="form-group row">
+
+<div class="col-sm-9">
+<%= text_field_tag :friend, params[:friend],placeholder: "Search for a friend", autofocus: true, class: "form-control form-control-lg"%>
+</div>
+
+<div class="col-sm-3">
+<%= button_tag type: :submit, class: "btn btn-success" do%>
+<%= fa_icon "search 2x" %>
+<% end %>
+</div>
+
+</div>
+<% end %>
+<%if @friends_list.empty?%>
+<p>Womp Wooomp, You have no friends.</p>
+
+<% else %>
+
+<%= render "users/friend_list"%>
+<%end%>
