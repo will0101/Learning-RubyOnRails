@@ -14,7 +14,14 @@ Please note, the goal of this is to not make them look "pretty" but to have them
 1. You need to have [rails](https://rubyonrails.org/) installed on your system.
 2. Once the project is installed locally run `rails server`
 
-## End Result - Not done yet.
+## End Result
+
+### Rant
+I can see where RoR would/could be useful in building web applications. But, Rails isn't a thing you can just hop into and hit the ground running unless you're OK with a lot of abstraction. A depth of Ruby fundamentals are required to know how something like `root "welcome#index` is even working. I'm writing this on `May 3, 2021`. VSCode is the go-to IDE their support for the Javascript eco-system is great. There's autocomplete and linting baked into VSCode for JS. Why would I, a fresh new developer just starting out in their career gravitate towards the Rails eco-system when it's clear that the support for Rails isn't quite there in the tools I know and love? 
+
+### TLDR
+Rails is something that I would only work with if I was paid to do it. Not for fun. 
+
 
 ## [1. Blog Project](https://wb-hello-world-blog.herokuapp.com/)
 
